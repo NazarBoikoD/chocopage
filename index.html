@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chocolate Store - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
-        #working{
-            font-size: 350px;
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f7e6e6;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+        }
+        .hero {
+            background-image: url('../assets/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin: 10px 0 20px 0;
+        }
+        .hero a.button {
+            padding: 12px 25px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            color: white;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <p id="working">WORKING</p>
+    <div class="navbar">
+        <div>CZ</div>
+        <div>
+            <a href="#">Sklep</a>
+            <a href="#">O nas</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Słodkości</h1>
+        <h2>Od zajączka</h2>
+        <a href="product.html" class="button">ZAMÓW JUŻ TERAZ</a>
+        <div class="scroll-indicator">przewiń w dół ↓</div>
+    </div>
 </body>
 </html>
